@@ -1,0 +1,49 @@
+body{
+    font-family: Arial;
+    background:#f4f4f4;
+}
+
+.container{
+    width:60%;
+    margin:50px auto;
+}
+
+h1{
+    text-align:center;
+}
+
+.skill{
+    margin:20px 0;
+}
+
+.skill-bar{
+    background:#ddd;
+    height:25px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.skill-fill{
+    height:100%;
+    line-height:25px;
+    color:white;
+    text-align:right;
+    padding-right:10px;
+    border-radius:20px;
+    width:0;
+    animation: fillBar 2s forwards;
+}
+
+/* Different Skill Widths */
+
+.html{ width:90%; background:#e44d26; }
+.css{ width:80%; background:#264de4; }
+.js{ width:65%; background:#f0db4f; color:black; }
+.bootstrap{ width:75%; background:#7952b3; }
+
+/* Animation */
+@keyframes fillBar{
+    from{
+        width:0;
+    }
+}
